@@ -5,7 +5,7 @@ export default function App(){
     <BrowserRouter>
       <NavBar/>      
       <Routes>
-        <Route exact path="/" element={<HomePage/>}/>
+        <Route exact path="/amazon/" element={<HomePage/>}/>
         <Route path="/product/:id" element={<ProductPage/>}/>
         <Route path="/checkout" element={<CheckOut/>}/>
         <Route path="/search" element={<SearchResults/>}/>
