@@ -30,22 +30,22 @@ const CarouselCatagory = () => {
             modules={[Navigation]}
         >
             <SwiperSlide className='ml-10 cursor-pointer' onClick={()=>categoryResults('Deals')}>
-                <img src="../images/category_0.jpg"/>
+                <img src="/images/category_0.jpg"/>
             </SwiperSlide>
             <SwiperSlide onClick={()=>categoryResults('Amazon')} className='cursor-pointer'>
-                <img src="../images/category_1.jpg"/>
+                <img src="/images/category_1.jpg"/>
             </SwiperSlide>
             <SwiperSlide onClick={()=>categoryResults('Fashion')} className='cursor-pointer'>
-                <img src="../images/category_2.jpg"/>
+                <img src="/images/category_2.jpg"/>
             </SwiperSlide>
             <SwiperSlide onClick={()=>categoryResults('Computers')} className='cursor-pointer'>
-                <img src="../images/category_3.jpg"/>
+                <img src="/images/category_3.jpg"/>
             </SwiperSlide>
             <SwiperSlide onClick={()=>categoryResults('Home')} className='cursor-pointer'>
-                <img src="../images/category_4.jpg"/>
+                <img src="/images/category_4.jpg"/>
             </SwiperSlide>
             <SwiperSlide onClick={()=>categoryResults('Mobile')} className='cursor-pointer'>
-                <img src="../images/category_5.jpg"/>
+                <img src="/images/category_5.jpg"/>
             </SwiperSlide>
         </Swiper>
     </div>

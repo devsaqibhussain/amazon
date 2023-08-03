@@ -17,19 +17,19 @@ const carousel = () => {
         className='h-[50%]'
       >
         <SwiperSlide>
-          <img src={"../images/carousel_1.jpg"} alt="carousel image 1" />
+          <img src={"/images/carousel_1.jpg"} alt="carousel image 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"../images/carousel_2.jpg"} alt="carousel image 1" />
+          <img src={"/images/carousel_2.jpg"} alt="carousel image 1" />
         </SwiperSlide>
         <SwiperSlide className=' bg-black'>
-          <video src="../images/carousel_vid.mp4" type="video/mp4" controls muted="muted"></video>
+          <video src="/images/carousel_vid.mp4" type="video/mp4" controls muted="muted"></video>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"../images/carousel_4.jpg"} alt="carousel image 1" />
+          <img src={"/images/carousel_4.jpg"} alt="carousel image 1" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={"../images/carousel_5.jpg"} alt="carousel image 1" />
+          <img src={"/images/carousel_5.jpg"} alt="carousel image 1" />
         </SwiperSlide>
       </Swiper>
       <div className=' h-[50%] bg-gradient-to-b from-stone-950'/>
