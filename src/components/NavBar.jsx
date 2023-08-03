@@ -9,7 +9,7 @@ const NavBar = () => {
         <div className="flex bg-stone-900 text-white h-[60px]">
             {/* left */}
             <div className="flex items-center">
-                <Link to={"/"}>
+                <Link to={"/amazon/"}>
                     <img className='h-[35px] w-[100px] m-2' src="../images/amazon.png" alt="amazon logo"  />
                 </Link>
                 <div className='pr-4 pl-4'>
