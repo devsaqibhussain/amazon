@@ -2,6 +2,7 @@ import { ShoppingCartIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { Search } from './'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { BASE_URL } from '../utils/constants'
 const NavBar = () => {
     const cart = useSelector((state)=> state.cart.productsNumber);
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
             {/* left */}
             <div className="flex items-center">
                 <Link to={"/amazon/"}>
-                    <img className='h-[35px] w-[100px] m-2' src="/images/amazon.png" alt="amazon logo"  />
+                    <img className='h-[35px] w-[100px] m-2' src={`${BASE_URL}/images/amazon.png`} alt="amazon logo"  />
                 </Link>
                 <div className='pr-4 pl-4'>
                     <div className=' ml-[20px] text-xs xl:text-sm'>Deliver to</div>
