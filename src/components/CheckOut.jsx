@@ -76,8 +76,8 @@ const CheckOut = () => {
                 </div>
               );
             })}
-            <div>
-              <div className=" text-right mr-10 mb-5 text-sm xl:text-base font-semibold">
+            <div className="p-5">
+              <div className=" text-right pt-3 pr-5 text-sm xl:text-base font-semibold border-t-2 border-gray-900">
                 SubTotal ({itemsNumber} items):
                 <span className=" font-bold ml-5 text-lg xl:text-xl">
                   {Currency.format(subTotal)}
