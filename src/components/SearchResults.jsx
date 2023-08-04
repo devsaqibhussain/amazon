@@ -2,7 +2,7 @@ import { useSearchParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { callAPI } from "../utils/CallApi";
 import { ProductDetails } from "./";
-import { Currency } from "../utils/constants";
+import { BASE_URL, Currency } from "../utils/constants";
 
 const SearchResults = () => {
   const [searchParams] = useSearchParams();
@@ -37,7 +37,7 @@ const SearchResults = () => {
             <Link key={key} to={`../product/${product.id}`}>
               <div className=" h-[250px] grid grid-cols-12 rounded mt-1 mb-1 border border-gray-100">
                 <div className="col-span-2 flex items-center justify-center bg-gray-100">
-                  <img className=" max-h-[200px]" src={product.image_small} />
+                  <img className=" max-h-[200px]" src={`${BASE_URL}/${product.image_small}`} />
                 </div>
                 <div className="col-span-10 font-medium text-black p-4 bg-gray-50 hover:bg-gray-100">
                   <ProductDetails product={product} rating={true} />

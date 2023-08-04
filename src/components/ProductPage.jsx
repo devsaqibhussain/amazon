@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { callAPI } from "../utils/CallApi";
 import { ProductDetails } from "./";
-import { Currency } from "../utils/constants";
+import { BASE_URL, Currency } from "../utils/constants";
 import { addToCart } from "../redux/cartSlice";
 const ProductPage = () => {
   const { id } = useParams();
@@ -32,7 +32,7 @@ const ProductPage = () => {
           <div className="grid grid-cols-10 gap-4">
             {/* Left */}
             <div className="col-span-3 p-8 rounded bg-white">
-              <img className="m-auto" src={`${product.image}`} />
+              <img className="m-auto" src={`${BASE_URL}/${product.image}`} />
             </div>
             {/* Middle */}
             <div className="col-span-5 bg-white divide-y divide-gray-300 p-8 rounded">
