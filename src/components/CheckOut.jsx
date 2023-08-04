@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import ProductDetails from "./ProductDetails";
-import { Currency } from "../utils/constants";
+import { BASE_URL, Currency } from "../utils/constants";
 import { removeFromCart } from "../redux/cartSlice";
 
 const CheckOut = () => {
@@ -33,7 +33,7 @@ const CheckOut = () => {
                         <div className="p-2 ">
                           <img
                             className="m-auto w-[150px]"
-                            src={product.image_small}
+                            src={`${BASE_URL}/${product.image_small}`}
                             alt=""
                           />
                         </div>
